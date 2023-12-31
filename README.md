@@ -45,30 +45,14 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/ndarray-base-flags
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var flags = require( '@stdlib/ndarray-base-flags' );
+import flags from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-flags@deno/mod.js';
 ```
 
 #### flags( x, copy )
@@ -76,7 +60,7 @@ var flags = require( '@stdlib/ndarray-base-flags' );
 Returns the flags of a provided [ndarray][@stdlib/ndarray/base/ctor].
 
 ```javascript
-var zeros = require( '@stdlib/ndarray-zeros' );
+import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-zeros@deno/mod.js';
 
 var x = zeros( [ 3, 2, 3 ] );
 // returns <ndarray>
@@ -88,7 +72,7 @@ var o = flags( x, false );
 When `copy` is `false`, changes to the returned object may mutate the input [ndarray][@stdlib/ndarray/base/ctor] flags. If there is a chance that the returned object will be mutated (either directly or by downstream consumers), set `copy` to `true` to prevent unintended side effects.
 
 ```javascript
-var zeros = require( '@stdlib/ndarray-zeros' );
+import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-zeros@deno/mod.js';
 
 var x = zeros( [ 3, 2, 3 ] );
 // returns <ndarray>
@@ -123,11 +107,11 @@ var bool = ( x.flags === o );
 <!-- eslint-disable new-cap -->
 
 ```javascript
-var zeros = require( '@stdlib/ndarray-zeros' );
-var slice = require( '@stdlib/ndarray-slice' );
-var E = require( '@stdlib/slice-multi' );
-var S = require( '@stdlib/slice-ctor' );
-var flags = require( '@stdlib/ndarray-base-flags' );
+import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-zeros@deno/mod.js';
+import slice from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-slice@deno/mod.js';
+import E from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-multi@deno/mod.js';
+import S from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@deno/mod.js';
+import flags from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-flags@deno/mod.js';
 
 // Create an array:
 var x = zeros( [ 10, 10, 10, 10 ] );
@@ -189,7 +173,7 @@ for ( i = 0; i < slices.length; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -249,7 +233,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-base-flags/main/LICENSE
 
-[@stdlib/ndarray/base/ctor]: https://github.com/stdlib-js/ndarray-base-ctor
+[@stdlib/ndarray/base/ctor]: https://github.com/stdlib-js/ndarray-base-ctor/tree/deno
 
 </section>
 
