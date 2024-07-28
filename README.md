@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import flags from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-flags@deno/mod.js';
+import flags from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-flags@v0.2.2-deno/mod.js';
 ```
 
 #### flags( x, copy )
@@ -111,7 +111,7 @@ import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-zeros@deno/mod.
 import slice from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-slice@deno/mod.js';
 import E from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-multi@deno/mod.js';
 import S from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@deno/mod.js';
-import flags from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-flags@deno/mod.js';
+import flags from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-flags@v0.2.2-deno/mod.js';
 
 // Create an array:
 var x = zeros( [ 10, 10, 10, 10 ] );
